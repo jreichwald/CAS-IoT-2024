@@ -49,8 +49,9 @@ Alle Sensoren senden die Daten inklusive Metadaten im JSON Dateiformat. Hierbei 
 * Lightbarrier  (key: l)
 
 Erwartetes Packet:
-
-Tbd.
+```
+{"topic":"eu868/gateway/e45f01fdfe98a7bf/event/up","payload":[10,23,0,0,0,0,0,0,0,0,0,246,209,15,30,32,58,180,168,63,152,70,75,12,36,34,18,8,224,233,132,158,3,18,10,26,8,8,200,208,7,16,9,40,1,42,65,10,16,101,52,53,102,48,49,102,100,102,101,57,56,97,55,98,102,16,239,177,3,26,12,8,133,163,235,182,6,16,216,129,221,208,2,48,231,255,255,255,255,255,255,255,255,1,61,205,204,60,65,64,1,72,1,106,4,70,223,224,193,128,1,2],"qos":0,"retain":false,"_msgid":"ecd14cfb43995f81"}
+```
 
 ## NodeRed
 NodeRed ist das Anwendungsystem. Mit NodeRed wird ein Preprocessing durchgeführt, bevor Daten in die Datenbank eingespeist werden.
