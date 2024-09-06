@@ -1,8 +1,8 @@
 # CAS-IoT-2024
 
 ## Architekurübersicht
+```mermaid 
 flowchart LR
-
     n2["Sensor"] --> n1["LoRa"]
     n3["Sensor"] --> n1
     n1 --> n4["ChirpStack"]
@@ -13,6 +13,7 @@ flowchart LR
     n8 --> n9["Prometheus to matt + Influx"]
 
     n9 --> n10["Grafana"]
+```
 
 ## ChirpStack Doku
 
