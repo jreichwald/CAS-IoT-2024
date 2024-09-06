@@ -10,8 +10,10 @@ flowchart LR
     n6["Sensor"] --> n7
     n7 --> n8["MQTT"]
     n4 --> n8
-    n8 --> n9["Prometheus to matt + Influx"]
-
+    n8 --> n11["Nodered"]
+    n11 --> n9["Prometheus"]
+    n11 --> n12
+    n12["Influx"] --> n10
     n9 --> n10["Grafana"]
 ```
 
