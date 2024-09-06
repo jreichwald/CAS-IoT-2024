@@ -40,3 +40,25 @@ flowchart LR
 * ChirpStack Adresse (141.72.13.25) eintragen mit Up and Down Port 1700 
 * In ChirpStack das Gateway hinzufügen mit der EUI
 * In einer Application neue Devices mit ihren EUI anlegen 
+
+## Sensoren
+Alle Sensoren senden die Daten inklusive Metadaten im JSON Dateiformat. Hierbei werden folgende Sensordaten verwendet:
+* Temperature   (key: t)
+* Humidty       (key: h)
+* Sound	        (key: s)
+* Lightbarrier  (key: l)
+
+Erwartetes Packet:
+
+Tbd.
+
+## NodeRed
+NodeRed ist das Anwendungsystem. Mit NodeRed wird ein Preprocessing durchgeführt, bevor Daten in die Datenbank eingespeist werden.
+Weiterhin können über NodeRed komplizer
+### Betrieb
+Für den Betrieb wurde Docker (docker-compose) gewählt. Um die Installation von entsprechenden Erweiterungen für Influxdb und Prometheus zu gewährleisten, wurde ein eigens Dockerfile angelegt und das Image gebaut.
+Die Daten werden persistent über Volumes gespeichert.
+
+### Anbindung von Sensoren
+Die Kommunikation erfolgt grundsätzlich über MQTT (mq.jreichwald.de:1887). 
+ 
