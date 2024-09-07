@@ -1,0 +1,16 @@
+[submodule "LoRa"]
+	path = LoRa
+	url = https://github.com/DHBW-CAS-IoTSoSe24/LoRa
+	branch = main
+[submodule "WLAN"]
+	path = WLAN
+	url = https://github.com/DHBW-CAS-IoTSoSe24/WLAN
+	branch = main
+[submodule "grafana-ansible"]
+	path = grafana-ansible
+	url = https://github.com/DHBW-CAS-IoTSoSe24/grafana-ansible
+	branch = main
+[submodule "grafana-dashboards"]
+	path = grafana-dashboards
+	url = https://github.com/DHBW-CAS-IoTSoSe24/grafana-dashboards
+	branch = main
