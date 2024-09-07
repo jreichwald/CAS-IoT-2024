@@ -8,6 +8,7 @@ flowchart LR
     n1 --> n4["ChirpStack"]
     n5["WLAN Sensor"] --> n8["MQTT"]
     n6["WLAN Sensor"] --> n8
+    n4 --> n8
     n8 --> n11["Nodered"]
     n11 --> n9["Prometheus"]
     n11 --> n12
