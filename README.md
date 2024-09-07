@@ -3,13 +3,11 @@
 ## Architekurübersicht
 ```mermaid 
 flowchart LR
-    n2["Sensor"] --> n1["LoRa"]
-    n3["Sensor"] --> n1
+    n2["LoRa Sensor"] --> n1["LoRa Gateway"]
+    n3["LoRa Sensor"] --> n1
     n1 --> n4["ChirpStack"]
-    n5["Sensor"] --> n7["WLAN"]
-    n6["Sensor"] --> n7
-    n7 --> n8["MQTT"]
-    n4 --> n8
+    n5["WLAN Sensor"] --> n8["MQTT"]
+    n6["WLAN Sensor"] --> n8
     n8 --> n11["Nodered"]
     n11 --> n9["Prometheus"]
     n11 --> n12
