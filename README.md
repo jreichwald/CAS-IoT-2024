@@ -10,7 +10,7 @@ flowchart LR
     n6["WLAN Sensor"] --> n8
     n4 --> n8
     n8 --> n11["Nodered"]
-    n11 <-- n9["Prometheus"]
+    n11 -- n9["Prometheus"]
     n11 --> n12
     n12["Influx"] --> n10
     n9 --> n10["Grafana"]
