@@ -14,3 +14,7 @@
 	path = grafana-dashboards
 	url = https://github.com/DHBW-CAS-IoTSoSe24/grafana-dashboards
 	branch = main
+[submodule "DB"]
+	path = DB
+	url = https://github.com/DHBW-CAS-IoTSoSe24/DB.git
+	branch = main
